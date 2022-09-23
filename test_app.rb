@@ -98,7 +98,7 @@ class TripTest < Test::Unit::TestCase
     app.end_trip(card, Trip.new(:chelsea, :wimbledon))
 
     ## assert
-    assert_equal(card.balance, 22)
+    assert_equal(card.balance, 22.5)
     assert_equal([3000, -Constants::FARES[:anyzone1], -Constants::FARES[:bus], -Constants::FARES[:anythreezones]], card.transaction_history)
   end
 end

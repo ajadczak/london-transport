@@ -1,3 +1,8 @@
+##
+# An OysterCard tracks two things, a current balance and a history of credits and debits.
+# Internally, the transactions and balances are stored as integer values which can then 
+# be formatted for output as desired.
+
 class OysterCard
   attr_reader :value, :transactions
 

@@ -22,7 +22,7 @@ class OysterCard
   end
 
   def balance
-    @value / 100
+    @value.to_f / 100
   end
 
   def transaction_history
